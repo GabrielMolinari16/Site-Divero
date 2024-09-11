@@ -1,0 +1,67 @@
+@font-face {
+    font-family: cursiva;
+    src: url(ArtisoulSignature.ttf);
+}
+.section{
+    margin-left: 73px;
+    transition: .4s ease;
+}
+
+nav.menu-lateral.expand ~ .section{
+    margin-left: 263px;
+}
+
+nav.menu-lateral.expand ~ .section .content{
+    margin-top: auto;
+}
+nav.menu-lateral.expand ~ .section .content .video-home{
+    margin-left: 30px;
+}
+
+nav.menu-lateral.expand ~ .section .content .introducao{
+    margin-left: px;
+}
+
+.section .content{
+    height: 100%;
+    display: block;
+    justify-content: center;
+    margin-left: 70px;
+}
+
+.section .content .titulo{
+    display: flex;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0px;
+    /* margin-left: 0px; */
+    font-size: 70px;
+    font-weight: 100 ;
+    font-family: cursiva;
+    width: 500px;
+    position: absolute;
+}
+
+.introducao{
+    transition: .4s ease-in-out;
+    font-size: 20px;
+    width: 950px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 50px;
+    /* margin-left: 10px; */
+}
+
+.section .content .video-home{
+    border-radius: 6px;
+    width: 235px ; 
+    height: 420px;
+    transition: .4s ease-in-out;
+    box-shadow: 0px 3px 20px gray;
+}
+
+.section .content .video{
+    width: 235px;
+    height: auto;
+    position: sticky;
+}
