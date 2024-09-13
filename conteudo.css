@@ -10,43 +10,59 @@ nav.menu-lateral.expand ~ section .content{
 section{
     margin-left: 73px;
     transition: .4s ease;
-    background-color: red;
+    /* background-color: red; */
     height: 100vh;
 }
 
 .content{
     height: 100%;
-    display: block;
+    display: flex;
     margin-left: 145px;
     max-width: 1000px;
-    background-color: aqua;
+    /* background-color: aqua; */
     transition: .4s ease;
+    justify-content: center
 }
 
 nav.menu-lateral.expand ~ section{
     margin-left: 263px;
 }
 
-section .content{
-    padding: 80px 0px 0px 0px;
+section#home .content{
+    padding: 10px 0px 0px 0px;
+    /* max-width: 600px; */
 }
 
 section .content .container-home{
-    background-color: brown;
-    display: flex;
+    /* background-color: brown; */
+    display: block;
     
 }
 
+section .container-home .introducao{
+    margin-top: 30px;
+    font-size: 20px;
+    max-width: 600px;
+    /* margin-left: 50px; */
+    text-align: center;
+    /* background-color: blue; */
+}
+
 section .content .video-home{
+    margin-top: 150px;
+    /* margin-left: 50px; */
     border-radius: 6px;
-    width: 235px ; 
-    height: 535px;
+    width: 600px;
+    height: 335px;
     transition: .4s ease-in-out;
     box-shadow: 0px 3px 20px gray;
 }
 
 .titulo{
     font-family: cursiva;
+}
+
+#home .titulo{
     font-size: 70px;
     position: absolute;
     font-weight: 100;
