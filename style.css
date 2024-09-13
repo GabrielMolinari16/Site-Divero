@@ -6,9 +6,13 @@
     box-sizing: border-box;
     font-family: Helvetica, Roboto, sans-serif;
 }
+
 body{
     height: auto;
     background-color: whitesmoke;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 nav.menu-lateral{
