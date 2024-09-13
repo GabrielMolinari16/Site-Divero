@@ -19,7 +19,7 @@ section{
     display: flex;
     margin-left: 145px;
     max-width: 1000px;
-    /* background-color: aqua; */
+    background-color: aqua;
     transition: .4s ease;
     justify-content: center
 }
@@ -30,11 +30,19 @@ nav.menu-lateral.expand ~ section{
 
 section#home .content{
     padding: 10px 0px 0px 0px;
-    /* max-width: 600px; */
 }
 
+.container{
+    background-color: blueviolet;
+}
+
+section#home .content .container{
+    display: block;
+}
+
+
 section .content .container-home{
-    /* background-color: brown; */
+    background-color: brown;
     display: block;
     
 }
@@ -43,12 +51,11 @@ section .container-home .introducao{
     margin-top: 30px;
     font-size: 20px;
     max-width: 600px;
-    /* margin-left: 50px; */
     text-align: center;
-    /* background-color: blue; */
+    background-color: blue;
 }
 
-section .content .video-home{
+section .content .container-home .video-home{
     margin-top: 150px;
     /* margin-left: 50px; */
     border-radius: 6px;
@@ -58,8 +65,27 @@ section .content .video-home{
     box-shadow: 0px 3px 20px gray;
 }
 
+section .content .video-conteudo{
+    margin-top: 50px;
+    border-radius: 6px;
+    width: 600px;
+    height: 335px;
+    transition: .4s ease-in-out;
+    box-shadow: 0px 3px 20px gray;
+}
+
 .titulo{
     font-family: cursiva;
+    font-size: 60px;
+    font-weight: 100;
+    position: relative;
+}
+
+.subtitulo{
+    font-family: cursiva;
+    font-size: 50px;
+    font-weight: 200;
+    top: -30px;
 }
 
 #home .titulo{
@@ -67,27 +93,3 @@ section .content .video-home{
     position: absolute;
     font-weight: 100;
 }
-
-
-
-
-/* 
-section .content .titulo{
-    display: flex;
-    color: rgb(0, 0, 0);
-    margin-bottom: 0px;
-    margin-left: 60px;
-    font-size: 70px;
-    font-weight: 100 ;
-    font-family: cursiva;
-    width: 500px;
-    position: relative;
-}
-
-
-
-section .content .video{
-    width: 235px;
-    height: auto;
-    
-} */
