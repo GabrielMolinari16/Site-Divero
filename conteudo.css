@@ -10,7 +10,7 @@ nav.menu-lateral.expand ~ section .content{
 section{
     margin-left: 73px;
     transition: .4s ease;
-    /* background-color: red; */
+    background-color: red;
     height: 100vh;
 }
 
@@ -66,7 +66,7 @@ section .content .container-home .video-home{
 }
 
 section .content .video-conteudo{
-    margin-top: 50px;
+    margin-top: 30px;
     border-radius: 6px;
     width: 600px;
     height: 335px;
@@ -79,6 +79,9 @@ section .content .video-conteudo{
     font-size: 60px;
     font-weight: 100;
     position: relative;
+    background-color: rgb(255, 196, 0);
+    justify-content: center;
+    display: flex;
 }
 
 .subtitulo{
@@ -86,6 +89,9 @@ section .content .video-conteudo{
     font-size: 50px;
     font-weight: 200;
     top: -30px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
 }
 
 #home .titulo{
