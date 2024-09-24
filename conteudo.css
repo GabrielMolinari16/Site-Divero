@@ -28,6 +28,10 @@ nav.menu-lateral:hover ~ section{
     margin-left: 263px;
 }
 
+/* section#home {
+    height: 100vh;
+} */
+
 section#home .content{
     padding: 10px 0px 0px 0px;
 }
@@ -56,7 +60,7 @@ section .container-home .introducao{
     font-size: 20px;
     max-width: 600px;
     text-align: center;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 section .content .container-home .video-home{
@@ -95,6 +99,7 @@ section .content .video-conteudo{
     background-color: aliceblue;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 #home .titulo{
@@ -103,11 +108,80 @@ section .content .video-conteudo{
     font-weight: 100;
 }
 
-section .content .container .video{
-    width: 100%;
+section .content .container-home .video{
+    background-color: #006eff;
     display: flex;
     justify-content: center;
 }
+
+section .content .container .video{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+
+
+/* SEÇÃO SOBRE - PODE GERAR CONFLITO CUIDAR AO MEXER COM OS ESTILOS ------------------------- */
+/* ESTILOS NO HTML TAMBÉM */
+section#sobre{
+    /* background-color: #2D4E63; */
+    height: 100vh;
+    width: auto;
+    align-items: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    color: white;
+    background-image: linear-gradient(27deg,#6B7F4F 30%, #2D4E63   );
+    background-size: 500% 100%;
+    /* animation: degrade 4s infinite alternate; */
+}
+
+section#sobre .content .container .grupo-elementos{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+}
+
+
+section#sobre .content .container > h2{
+margin-top: 10px;
+}
+
+section#sobre .redesSociais-container{
+    max-width: 300px;
+    bottom: 10px;
+    /* background-color: #2D4E63; */
+
+} 
+
+
+section#sobre .redesSociais{ 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 5px;
+    /* background-color: #2D4E63; */
+}
+
+section#sobre .redesSociais a{ 
+color: white;
+}
+
+.endereco-container{
+    /* background-color: #2D4E63; */
+    max-width: 300px;
+}
+
+.endereco-container > h2{
+    margin-bottom: 5px;
+}
+
+
+/* FIM SEÇÃO SOBRE -------------------------------------------------------------------------- */
 
 .frase-mobile{
     /* margin: ; */
@@ -119,7 +193,7 @@ section .content .container .video{
     height: 100vh;
     background-image: linear-gradient(27deg,#ff2200,#3cff00,#006eff,violet  );
     background-size: 500% 100%;
-    animation: degrade 6s infinite alternate;
+    animation: degrade 3s infinite alternate;
     padding: 20px;
 }
 

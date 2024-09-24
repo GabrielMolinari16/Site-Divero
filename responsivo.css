@@ -1,33 +1,87 @@
 @media screen and (max-width: 970px ){
 
-    .frase-mobile {
-        flex-direction: column;
+    nav.menu-lateral{
+        display: none;
+    }
+    
+    section{
+        margin-left: 0px;
+        background-color: red;
+        height: auto;
     }
 
-    .frase-mobile h2{
-        /* margin: ; */
+    section#home{
+        margin-bottom: 20px;
+    }
+
+
+    .content{
+    height: 100%;
+    display: flex;
+    margin-left: 0px;
+    max-width: 1000px;
+    background-color: aqua;
+    justify-content: center
+    }
+
+    #home .titulo{
+        font-size: 50px;
+        position: absolute;
+        font-weight: 100;
+        margin-top: 30px;
+    }
+    
+    section .content .container-home{
+        padding: 0px 10px 0px 10px;
+        margin-top: 30px;
+    }
+    section .content .container-home .subtitulo{
+        font-size: 36px;  
+        top: 70px;
+    }
+    .titulo{
+        font-family: cursiva;
+        font-size: 60px;
+        font-weight: 100;
+        position: relative;
+        background-color: rgb(255, 196, 0);
+        justify-content: center;
+        display: flex;
+    }
+
+    section .content .container .video{
+        max-width: 100%;
+        height: auto;
         display: flex;
         justify-content: center;
-        color: rgb(255, 255, 255);
-        align-items: center;
-        /* width: 100%; */
-        height: 100vh;
-        /* background-image: linear-gradient(); */
-        padding: 20px;
-        text-align: center;
-        font-weight: 900;
-        font-size: 25px;
-        font-family: roboto;
-        top: 40px;
     }
-    
-    .frase-mobile h1{
-        font-family: cursiva;
+
+    section .content .video-conteudo{
+        width: 400px;
+        height: 250px;
+    }
+
+    section .content .container-home .video-home{
+        max-width: 370px;
+        height: 335px;
+        margin-top: 80px;
+
+    }
+
+    .titulo{
+        font-size: 45px;
+    }
+
+    .subtitulo{
+        max-width: 100%;
         font-weight: 200;
-        font-size: 70px;
-        color: white;
-
+        top: -30px;
+        display: flex;
+        justify-content: center;
     }
-    
 
+    /* SEÇÃO SOBRE ---------------------*/
+    section#sobre{
+        height: 100vh;
+    }
 }
