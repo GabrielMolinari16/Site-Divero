@@ -3,7 +3,7 @@
     src: url(ArtisoulSignature.ttf);
 }
 
-nav.menu-lateral.expand ~ section .content{
+nav.menu-lateral:hover ~ section .content{
     margin-left: 55px;
 }
 
@@ -24,7 +24,7 @@ section{
     justify-content: center
 }
 
-nav.menu-lateral.expand ~ section{
+nav.menu-lateral:hover ~ section{
     margin-left: 263px;
 }
 
@@ -44,11 +44,15 @@ section#home .content .container{
 section .content .container-home{
     background-color: brown;
     display: block;
-    
+}
+
+section .content .container-home .subtitulo{
+    position: relative;
+    top: 100px;
 }
 
 section .container-home .introducao{
-    margin-top: 30px;
+    margin-top: 20px;
     font-size: 20px;
     max-width: 600px;
     text-align: center;
@@ -56,8 +60,7 @@ section .container-home .introducao{
 }
 
 section .content .container-home .video-home{
-    margin-top: 150px;
-    /* margin-left: 50px; */
+    margin-top: 110px;
     border-radius: 6px;
     width: 600px;
     height: 335px;
@@ -98,4 +101,33 @@ section .content .video-conteudo{
     font-size: 70px;
     position: absolute;
     font-weight: 100;
+}
+
+section .content .container .video{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.frase-mobile{
+    /* margin: ; */
+    display: flex;
+    justify-content: center;
+    color: black;
+    align-items: center;
+    /* width: 100%; */
+    height: 100vh;
+    background-image: linear-gradient(27deg,#ff2200,#3cff00,#006eff,violet  );
+    background-size: 500% 100%;
+    animation: degrade 6s infinite alternate;
+    padding: 20px;
+}
+
+@keyframes degrade{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 100%;
+    }
 }

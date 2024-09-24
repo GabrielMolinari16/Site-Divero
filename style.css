@@ -40,7 +40,7 @@ nav.menu-lateral{
     border-radius: 5px;
 }
 
-nav.menu-lateral.expand{
+nav.menu-lateral:hover{
     width: 260px;
 }
 
@@ -60,20 +60,18 @@ nav.menu-lateral.expand{
 }
 
 .logo-divero{
-    height: 20px;
+    height: 30px;
     width: auto;
     cursor: pointer;
-    margin-left: 20px;
+    margin-left: 25px;
+    margin-top: 4px;
     position: absolute;
-}
-
-.logo-hidden{
-    display: none;
+    line-height: 30px;
 }
 
 ul{
-    height: 100%;
     list-style-type: none;
+    overflow: hidden;
 }
 
 ul li.item-menu{
@@ -156,7 +154,7 @@ ul li div.grupo div.subgrupo div.tipo{
     border-radius: 5px;
 }
 
-nav.menu-lateral.expand .txt-link{
+nav.menu-lateral:hover .txt-link{
     margin-left: 40px;
     opacity: 1;
 }
@@ -167,3 +165,17 @@ ul li.item-menu a .icon > i{
     text-decoration: none;
 }
 
+.menuLogo{
+    /* height: 50px; */
+    width: 25px;
+}
+
+/* Google */
+.material-symbols-outlined {
+    font-size: 30px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 30
+}

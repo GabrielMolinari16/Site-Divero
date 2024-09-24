@@ -1,6 +1,6 @@
-retirar  bt-expand trocar pela logo;
+retirar  bt-expand trocar pela logo; ok
 
-home subtitulo : treinamento de produto;
+home subtitulo : treinamento de produto; ok
 
 contagem de progresso de leitura 
 
