@@ -3,42 +3,44 @@
     src: url(ArtisoulSignature.ttf);
 }
 
-nav.menu-lateral:hover ~ section .content{
-    margin-left: 55px;
-}
-
 section{
-    margin-left: 73px;
-    transition: .4s ease;
-    background-color: red;
+    transition: .2s;
+    /* background-color: red; */
     height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    margin-left: 74px;
 }
 
 .content{
     height: 100%;
     display: flex;
-    margin-left: 145px;
     max-width: 1000px;
-    background-color: aqua;
-    transition: .4s ease;
+    /* background-color: aqua; */
+    transition: .2s ease;
     justify-content: center
 }
 
 nav.menu-lateral:hover ~ section{
-    margin-left: 263px;
+    margin-left: 264px;
 }
 
-/* section#home {
+section#home {
     height: 100vh;
-} */
+    max-width: 100%;
+    /* background-color: #006eff; */
+    display: flex;
+    justify-content: center;
+}
 
 section#home .content{
     padding: 10px 0px 0px 0px;
 }
 
-.container{
+/* .container{
     background-color: blueviolet;
-}
+} */
 
 section#home .content .container{
     display: block;
@@ -46,13 +48,14 @@ section#home .content .container{
 
 
 section .content .container-home{
-    background-color: brown;
+    /* background-color: brown; */
     display: block;
 }
 
 section .content .container-home .subtitulo{
     position: relative;
     top: 100px;
+    margin-top: 0px;
 }
 
 section .container-home .introducao{
@@ -86,9 +89,11 @@ section .content .video-conteudo{
     font-size: 60px;
     font-weight: 100;
     position: relative;
-    background-color: rgb(255, 196, 0);
+    /* background-color: rgb(255, 196, 0); */
     justify-content: center;
     display: flex;
+    padding: 0px 5px;
+    text-shadow: #5a5a5ae1 0px 2px 2px;
 }
 
 .subtitulo{
@@ -96,10 +101,11 @@ section .content .video-conteudo{
     font-size: 50px;
     font-weight: 200;
     top: -30px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-top: 20px;
 }
 
 #home .titulo{
@@ -109,7 +115,7 @@ section .content .video-conteudo{
 }
 
 section .content .container-home .video{
-    background-color: #006eff;
+    /* background-color: #006eff; */
     display: flex;
     justify-content: center;
 }
@@ -118,23 +124,22 @@ section .content .container .video{
     max-width: 100%;
     display: flex;
     justify-content: center;
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 
 /* SEÇÃO SOBRE - PODE GERAR CONFLITO CUIDAR AO MEXER COM OS ESTILOS ------------------------- */
 /* ESTILOS NO HTML TAMBÉM */
 section#sobre{
-    /* background-color: #2D4E63; */
+    background-color: #2D4E63;
     height: 100vh;
     width: auto;
     align-items: center;
-    /* display: flex; */
-    /* flex-direction: column; */
     color: white;
-    background-image: linear-gradient(27deg,#6B7F4F 30%, #2D4E63   );
+    background-image: linear-gradient(27deg,#6B7F4F 40%, #2D4E63   );
     background-size: 500% 100%;
-    /* animation: degrade 4s infinite alternate; */
+    animation: degrade 5s infinite alternate;
+    transition: .2s ease;
 }
 
 section#sobre .content .container .grupo-elementos{
@@ -142,15 +147,17 @@ section#sobre .content .container .grupo-elementos{
     display: flex;
     justify-content: center;
     gap: 300px;
+    /* background-color: maroon; */
 }
 
 
 section#sobre .content .container > h2{
-margin-top: 10px;
+    margin-top: 10px;
+    max-width: 100%;
 }
 
 section#sobre .redesSociais-container{
-    max-width: 300px;
+    max-width: 100%;
     bottom: 10px;
     /* background-color: #2D4E63; */
 
@@ -173,7 +180,12 @@ color: white;
 
 .endereco-container{
     /* background-color: #2D4E63; */
-    max-width: 300px;
+    max-width: 100%;
+    /* text-align: left; */
+}
+.endereco-container a{
+    text-decoration: none;
+    color: white;
 }
 
 .endereco-container > h2{
