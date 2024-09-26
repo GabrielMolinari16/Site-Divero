@@ -10,11 +10,27 @@
     overflow: hidden;
     transition: .3s;    
     opacity: 0;
+    overflow-y: auto;
 }
 
 .menu_mobile.abrir-menu{
     width: 75%;
     opacity: 1;
+}
+
+/* BARRA DE ROLAGEM */
+.menu_mobile::-webkit-scrollbar{
+    width: 10px;
+    background-color: transparent;
+    /* display: none; */
+}
+.menu_mobile::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Cor do polegar ao passar o mouse */
+}
+
+.menu_mobile::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.158);
+    border-radius: 5px;
 }
 
 .menu_mobile .btn_fechar{
@@ -147,4 +163,3 @@ ul li div.grupo-mobile div.subgrupo-mobile div.tipo-mobile{
     font-size: 20px;
     padding: 3px 0px 2px 1px;
 }
-    
