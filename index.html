@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="conteudo.css">
-    <link rel="stylesheet" href="responsivo.css">
     <link rel="stylesheet" href="menu_mobile.css">
+    <link rel="stylesheet" href="responsivo.css">
     <link rel="stylesheet" href="secao_sobre.css">
     <script src="expadir-itens_menu.js" defer></script>
     <script src="menu.js" defer></script>
-    <title> Treinamento Divero</title>
+    <title>Treinamento Divero</title>
 </head>
+
 <body>
+    <div class="header">
+    <div class="btn-menu" id="btn_abrir"><i class="bi bi-chevron-bar-right"></i></div>
+    </div>
     <nav class="menu-lateral">
         <div class="btn-expandir" id="btnExp">
             <a href="#home"><img class="menuLogo" src="Simbolo_20 cópia 2.png" alt="Divero"></a>
             <a href="#home"><img class="logo-divero" src="logo-divero.png" alt="logo"></a>
-        </div>  
+        </div>
         <ul>
             <li class="item-menu ativo">
                 <a href="#home" class="a">
@@ -27,12 +33,12 @@
                     <span class="txt-link">Home</span>
                 </a>
             </li>
-            <li class="item-menu" >
+            <li class="item-menu">
                 <a href="#modelagens" class="a">
                     <span class="icon"><i class="bi bi-puzzle"></i></span>
                     <span class="txt-link">Modelagens</span>
                 </a>
-                <div class="grupo"> 
+                <div class="grupo">
                     <a href="#modelagens">Feminino</a>
                     <div class="subgrupo">
                         <a href="#modelagens">Calças</a>
@@ -79,8 +85,8 @@
                             <a href="#slouchy">Slouchy</a>
                         </div>
                     </div>
-                </div> 
-                <div class="grupo"> 
+                </div>
+                <div class="grupo">
                     <a href="#modelagens_masculino">Masculino</a>
                     <div class="subgrupo">
                         <a href="#modelagens_masculino">Calças</a>
@@ -110,8 +116,8 @@
                             <a href="#alfaiataria_masculino">Alfaiataria</a>
                         </div>
                     </div>
-                </div> 
-                <div class="grupo"> 
+                </div>
+                <div class="grupo">
                     <a href="#plus_size">Plus Size</a>
                     <div class="subgrupo">
                         <a href="#plus_size">Calças</a>
@@ -133,13 +139,13 @@
                             <a href="#bermudas_plus_size">Alfaiataria</a>
                         </div>
                     </div>
-                </div> 
+                </div>
             </li>
             <li class="item-menu">
                 <a href="#tecnologias" class="a">
                     <span class="icon"><i class="bi bi-clipboard2-check"></i></i></span>
                     <span class="txt-link">Tecnologias</span>
-                </a>  
+                </a>
                 <div class="grupo">
                     <a href="#tecnologias">Power 360°</a>
                     <a href="#extremo_toque">Extremo Toque </a>
@@ -151,23 +157,23 @@
                     <a href="#sarja_jeans_malha">Sarja/Jeans Malha</a>
                     <a href="#controle_termico">Controle Térmico</a>
                     <a href="#extremo_power">Extremo Power</a>
-                    <a href="#eco">Eco</a>                
+                    <a href="#eco">Eco</a>
                 </div>
             </li>
             <li class="item-menu">
                 <a href="#familias" class="a">
                     <span class="icon"><i class="bi bi-ui-radios-grid"></i></span>
                     <span class="txt-link">Famílias</span>
-                </a>  
+                </a>
                 <div class="grupo">
-                        <a href="#familias">Gentilezza</a>
-                        <a href="#PU">PU</a>
-                        <a href="#tweed">Tweed</a>
-                        <a href="#alfaiataria">Alfaiataria</a>
-                        <a href="#linho">Linho</a>
-                        <a href="#all_denim">All Denim</a>
-                        <a href="#all_black">All Black</a>
-                        <a href="#cotele">Cotelê</a>
+                    <a href="#familias">Gentilezza</a>
+                    <a href="#PU">PU</a>
+                    <a href="#tweed">Tweed</a>
+                    <a href="#alfaiataria">Alfaiataria</a>
+                    <a href="#linho">Linho</a>
+                    <a href="#all_denim">All Denim</a>
+                    <a href="#all_black">All Black</a>
+                    <a href="#cotele">Cotelê</a>
                 </div>
             </li>
         </ul>
@@ -176,26 +182,175 @@
                 <a href="#sobre" class="a">
                     <span class="icon"><i class="bi bi-question-circle"></i></span>
                     <span class="txt-link">Sobre</span>
-                </a>  
+                </a>
             </li>
         </ul>
     </nav>
-<!-- --------------------------------------- MENU MOBILE --------------------------------------- -->
-    <div class="menu_mobile">
+    <div class="overlay" id="overlay"></div>
+    <!-- --------------------------------------- MENU MOBILE --------------------------------------- -->
+    <div class="menu_mobile" id="menu_mobile">
         <div class="btn_fechar">
-            <i class="bi bi-caret-left"></i>
+            <i class="bi bi-chevron-bar-left" id="btn_fechar"></i>
         </div>
         <nav>
             <ul>
-                <li class="item-menu ativo">
+                <li class="item-menu-mobile ativo">
                     <a href="#home" class="a">
-                        <span class="icon"><i class="bi bi-house-door"></i></span>
                         <span class="txt-link">Home</span>
                     </a>
                 </li>
+                <li class="item-menu-mobile">
+                    <a href="#modelagens" class="a">
+                        <span class="txt-link">Modelagens</span>
+                    </a>
+                    <div class="grupo-mobile">
+                        <a href="#modelagens">Feminino</a>
+                        <div class="subgrupo-mobile">
+                            <a href="#modelagens">Calças</a>
+                            <div class="tipo-mobile">
+                                <a href="#modelagens">Skinny</a>
+                                <a href="#cigarrete">Cigarrete</a>
+                                <a href="#cropped">Cropped</a>
+                                <a href="#flare">Flare</a>
+                                <a href="#flare_baixa_estatura">Flare Baixa Estatura</a>
+                                <a href="#bootcut">Bootcut</a>
+                                <a href="#slouchy">Slouchy</a>
+                                <a href="#reta">Reta</a>
+                                <a href="#wide_leg">Wide Leg</a>
+                                <a href="#jogger">Jogger</a>
+                                <a href="#mom">Mom</a>
+                            </div>
+                        </div>
+                        <div class="subgrupo-mobile">
+                            <a href="#parte_superior">Parte Superior</a>
+                            <div class="tipo-mobile">
+                                <a href="#parte_superior">Cropped</a>
+                                <a href="#tradicional">Tradicional</a>
+                                <a href="#forrada">Forrada</a>
+                                <a href="#parka_tradicional">Parka Tradicional</a>
+                                <a href="#parka_forrada">Parka Forrada</a>
+                                <a href="#colete">Colete</a>
+                                <a href="#blazer">Blazer</a>
+                                <a href="#casaco">Casaco</a>
+                            </div>
+                        </div>
+                        <div class="subgrupo-mobile">
+                            <a href="#saia">Saia</a>
+                            <div class="tipo-mobile">
+                                <a href="#saia">Mini</a>
+                                <a href="#midi">Midi</a>
+                            </div>
+                        </div>
+                        <div class="subgrupo-mobile">
+                            <a href="#bermuda_shorts">Bermuda e Shorts</a>
+                            <div class="tipo-mobile">
+                                <a href="#bermuda_shorts">Soltinho</a>
+                                <a href="#mom">Mom</a>
+                                <a href="#alfaiataria">Alfaiataria</a>
+                                <a href="#slouchy">Slouchy</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grupo-mobile">
+                        <a href="#modelagens_masculino">Masculino</a>
+                        <div class="subgrupo-mobile">
+                            <a href="#modelagens_masculino">Calças</a>
+                            <div class="tipo-mobile">
+                                <a href="#modelagens_masculino">Skinny</a>
+                                <a href="#super_skinny_masculino">Super Skinny</a>
+                                <a href="#slim_masculino">Slim</a>
+                                <a href="#reta_masculino">Reta</a>
+                                <a href="#jogger_masculino">Jogger</a>
+                                <a href="#cargo_masculino">Cargo</a>
+                            </div>
+                        </div>
+                        <div class="subgrupo-mobile">
+                            <a href="#parte_superior_masculino">Parte Superior</a>
+                            <div class="tipo-mobile">
+                                <a href="#parte_superior_masculino">Jaqueta Tradicional</a>
+                                <a href="#jaqueta_bomber_masculino">Jaqueta Bomber</a>
+                                <a href="#jaqueta_forrada_masculino">Jaqueta Forrada</a>
+                                <a href="#camisa_masculino">Camisa</a>
+                                <a href="#blazer_masculino">Blazer</a>
+                            </div>
+                        </div>
+                        <div class="subgrupo-mobile">
+                            <a href="#bermudas_masculino">Bermudas</a>
+                            <div class="tipo-mobile">
+                                <a href="#bermudas_masculino">Tradicional/ Five pocket</a>
+                                <a href="#alfaiataria_masculino">Alfaiataria</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grupo-mobile">
+                        <a href="#plus_size">Plus Size</a>
+                        <div class="subgrupo-mobile">
+                            <a href="#plus_size">Calças</a>
+                            <div class="tipo-mobile">
+                                <a href="#plus_size">Cigarrete</a>
+                                <a href="#skinny_plus_size">Skinny</a>
+                            </div>
+                        </div>
+                        <div class="subgrupo-mobile">
+                            <a href="#parte_superior_plus_size">Parte Superior</a>
+                            <div class="tipo-mobile">
+                                <a href="#parte_superior_plus_size">Jaqueta Tradicional</a>
+                                <a href="#jaqueta_cropped_plus_size">Jaqueta Cropped</a>
+                            </div>
+                        </div>
+                        <div class="subgrupo-mobile">
+                            <a href="#bermudas_plus_size">Bermuda</a>
+                            <div class="tipo-mobile">
+                                <a href="#bermudas_plus_size">Alfaiataria</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="item-menu-mobile">
+                    <a href="#tecnologias" class="a">
+                        <span class="txt-link">Tecnologias</span>
+                    </a>
+                    <div class="grupo-mobile">
+                        <a href="#tecnologias">Power 360°</a>
+                        <a href="#extremo_toque">Extremo Toque </a>
+                        <a href="#eu_nao_laceio">Eu não Laceio</a>
+                        <a href="#eu_nao_desboto">Eu não Desboto</a>
+                        <a href="#gentilezza">Gentilezza</a>
+                        <a href="#push_up">Push Up</a>
+                        <a href="#shape_fit">Shape Fit</a>
+                        <a href="#sarja_jeans_malha">Sarja/Jeans Malha</a>
+                        <a href="#controle_termico">Controle Térmico</a>
+                        <a href="#extremo_power">Extremo Power</a>
+                        <a href="#eco">Eco</a>
+                    </div>
+                </li>
+                <li class="item-menu-mobile">
+                    <a href="#familias" class="a">
+                        <span class="txt-link">Famílias</span>
+                    </a>
+                    <div class="grupo-mobile">
+                        <a href="#familias">Gentilezza</a>
+                        <a href="#PU">PU</a>
+                        <a href="#tweed">Tweed</a>
+                        <a href="#alfaiataria">Alfaiataria</a>
+                        <a href="#linho">Linho</a>
+                        <a href="#all_denim">All Denim</a>
+                        <a href="#all_black">All Black</a>
+                        <a href="#cotele">Cotelê</a>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li class="item-menu-mobile">
+                    <a href="#sobre" class="a">
+                        <span class="txt-link">Sobre</span>
+                    </a>
+                </li>
+            </ul>
             </ul>
         </nav>
     </div>
+    <!-- -------------------------------------- /MENU MOBILE --------------------------------------- -->
 
     <section id="home">
         <div class="content">
@@ -203,10 +358,16 @@
             <div class="container-home">
                 <h1 class="subtitulo">Treinamento de Produto</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-home" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-home"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div class="introducao">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate adipisci repellat autem ad quo error perferendis inventore qui. Quos rerum quia velit culpa commodi vel sit nesciunt obcaecati, magni in.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate adipisci repellat autem ad quo
+                    error perferendis inventore qui. Quos rerum quia velit culpa commodi vel sit nesciunt obcaecati,
+                    magni in.
                 </div>
             </div>
         </div>
@@ -217,7 +378,11 @@
                 <h1 class="titulo">Modelagens / Feminino</h1>
                 <h1 class="subtitulo">Calças - Skinny</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -227,7 +392,11 @@
             <div class="container">
                 <h1 class="subtitulo">Calças - Cigarrete</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -237,7 +406,11 @@
             <div class="container">
                 <h1 class="subtitulo">Calças - Cropped</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -247,7 +420,11 @@
             <div class="container">
                 <h1 class="subtitulo">Calças - Flare</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -257,7 +434,11 @@
             <div class="container">
                 <h1 class="subtitulo">Calças - Flare Baixa Estatura</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -267,7 +448,11 @@
             <div class="container">
                 <h1 class="subtitulo">Calças - Bootcut</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -277,7 +462,11 @@
             <div class="container">
                 <h1 class="subtitulo">Calças - Slouchy</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -287,7 +476,11 @@
             <div class="container">
                 <h1 class="subtitulo">Calças - Reta</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -297,7 +490,11 @@
             <div class="container">
                 <h1 class="subtitulo">Calças - Wide Leg</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -307,7 +504,11 @@
             <div class="container">
                 <h1 class="subtitulo">Calças - Jogger</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -317,7 +518,11 @@
             <div class="container">
                 <h1 class="subtitulo">Calças - Mom</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -327,7 +532,11 @@
             <div class="container">
                 <h1 class="subtitulo">Parte Superior - Cropped</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -337,7 +546,11 @@
             <div class="container">
                 <h1 class="subtitulo">Parte Superior - Tradicional</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -347,7 +560,11 @@
             <div class="container">
                 <h1 class="subtitulo">Parte Superior - Forrada</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -357,7 +574,11 @@
             <div class="container">
                 <h1 class="subtitulo">Parte Superior - Parka Tradicional</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -367,7 +588,11 @@
             <div class="container">
                 <h1 class="subtitulo">Parte Superior - Parka Forrada</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -377,7 +602,11 @@
             <div class="container">
                 <h1 class="subtitulo">Parte Superior - Colete</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -387,7 +616,11 @@
             <div class="container">
                 <h1 class="subtitulo">Parte Superior - Blazer</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -397,7 +630,11 @@
             <div class="container">
                 <h1 class="subtitulo">Parte Superior - Casaco</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -407,7 +644,11 @@
             <div class="container">
                 <h1 class="subtitulo">Saia - Mini</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -417,7 +658,11 @@
             <div class="container">
                 <h1 class="subtitulo">Saia - Midi</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -427,7 +672,11 @@
             <div class="container">
                 <h1 class="subtitulo">Bermuda e Shorts - Soltinho</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -437,7 +686,11 @@
             <div class="container">
                 <h1 class="subtitulo">Bermuda e Shorts - Mom</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -447,7 +700,11 @@
             <div class="container">
                 <h1 class="subtitulo">Bermuda e Shorts - Alfaiataria</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -457,7 +714,11 @@
             <div class="container">
                 <h1 class="subtitulo">Bermuda e Shorts - Slouchy</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -468,7 +729,11 @@
                 <h1 class="titulo">Modelagens / Masculino</h1>
                 <h1 class="subtitulo">Calças - Skinny</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -478,7 +743,11 @@
             <div class="container">
                 <h1 class="subtitulo">Calças - Super Skinny</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -488,7 +757,11 @@
             <div class="container">
                 <h1 class="subtitulo">Calças - Slim</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -498,7 +771,11 @@
             <div class="container">
                 <h1 class="subtitulo">Calças - Reta</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -508,7 +785,11 @@
             <div class="container">
                 <h1 class="subtitulo">Calças - Jogger</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -518,7 +799,11 @@
             <div class="container">
                 <h1 class="subtitulo">Calças - Cargo</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -528,7 +813,11 @@
             <div class="container">
                 <h1 class="subtitulo">Parte Superior - Jaqueta Tradicional</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -538,7 +827,11 @@
             <div class="container">
                 <h1 class="subtitulo">Parte Superior - Jaqueta Bomber</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -548,7 +841,11 @@
             <div class="container">
                 <h1 class="subtitulo">Parte Superior - Jaqueta Forrada</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -558,7 +855,11 @@
             <div class="container">
                 <h1 class="subtitulo">Parte Superior - Camisa</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -568,7 +869,11 @@
             <div class="container">
                 <h1 class="subtitulo">Parte Superior - Blazer</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -578,7 +883,11 @@
             <div class="container">
                 <h1 class="subtitulo">Bermudas - Tradicional/Five pocket</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -588,7 +897,11 @@
             <div class="container">
                 <h1 class="subtitulo">Bermudas - Alfaiataria</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -599,7 +912,11 @@
                 <h1 class="titulo">Modelagens / Plus Size</h1>
                 <h1 class="subtitulo">Calças - Cigarrete</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -609,7 +926,11 @@
             <div class="container">
                 <h1 class="subtitulo">Calças - Skinny</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -619,7 +940,11 @@
             <div class="container">
                 <h1 class="subtitulo">Parte Superior - Jaqueta Tradicional</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -629,7 +954,11 @@
             <div class="container">
                 <h1 class="subtitulo">Parte Superior - Jaqueta Cropped</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -639,7 +968,11 @@
             <div class="container">
                 <h1 class="subtitulo">Bermudas - Alfaiataria</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -650,7 +983,11 @@
                 <h1 class="titulo">Tecnologias</h1>
                 <h1 class="subtitulo">Power 360°</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -660,7 +997,11 @@
             <div class="container">
                 <h1 class="subtitulo">Extremo Toque</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -670,7 +1011,11 @@
             <div class="container">
                 <h1 class="subtitulo">Eu não Laceio</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -680,7 +1025,11 @@
             <div class="container">
                 <h1 class="subtitulo">Eu não Desboto</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -690,7 +1039,11 @@
             <div class="container">
                 <h1 class="subtitulo">Gentilezza</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -700,7 +1053,11 @@
             <div class="container">
                 <h1 class="subtitulo">Push Up</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -710,7 +1067,11 @@
             <div class="container">
                 <h1 class="subtitulo">Shape Fit</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -720,7 +1081,11 @@
             <div class="container">
                 <h1 class="subtitulo">Sarja/Jeans Malha</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -730,7 +1095,11 @@
             <div class="container">
                 <h1 class="subtitulo">Controle Térmico</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -740,7 +1109,11 @@
             <div class="container">
                 <h1 class="subtitulo">Extremo Power</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -750,7 +1123,11 @@
             <div class="container">
                 <h1 class="subtitulo">Eco</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -761,7 +1138,11 @@
                 <h1 class="titulo">Famílias</h1>
                 <h1 class="subtitulo">Gentilezza</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -771,7 +1152,11 @@
             <div class="container">
                 <h1 class="subtitulo">PU</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -781,7 +1166,11 @@
             <div class="container">
                 <h1 class="subtitulo">Tweed</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -791,7 +1180,11 @@
             <div class="container">
                 <h1 class="subtitulo">Alfaiataria</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -801,7 +1194,11 @@
             <div class="container">
                 <h1 class="subtitulo">Linho</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -811,7 +1208,11 @@
             <div class="container">
                 <h1 class="subtitulo">All Denim</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -821,7 +1222,11 @@
             <div class="container">
                 <h1 class="subtitulo">All Black</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
@@ -831,66 +1236,80 @@
             <div class="container">
                 <h1 class="subtitulo">Cotelê</h1>
                 <div class="video">
-                    <iframe loading="lazy" class="video-conteudo" src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>            
+                    <iframe loading="lazy" class="video-conteudo"
+                        src="https://www.youtube.com/embed/D_lmNBWHq7k?si=MYGqBJyWa7K5OeMF" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
     </section>
-   
+
     <section id="sobre">
         <div class="content">
-            <div  class="container" style="max-width: 1200px; margin: 0 auto; text-align: center;">
-            <!-- Logo -->
-            <div id="logo" style="margin-top: 20px; margin-bottom: 20px;">
-                <img src="logo-divero.png" alt="Logo Divero Jeans" style="max-width: 200px;">
-            </div>
+            <div class="container" style="max-width: 1200px; margin: 0 auto; text-align: center;">
+                <!-- Logo -->
+                <div id="logo" style="margin-top: 20px; margin-bottom: 20px;">
+                    <img src="logo-divero.png" alt="Logo Divero Jeans" style="max-width: 200px;">
+                </div>
 
-            <!-- Título e Missão -->
-            <h1>Sobre a Divero Jeans</h1>
-            <p style="font-size: 18px;">
-                Na <strong>Divero Jeans</strong>, acreditamos que estilo e conforto andam juntos. Com mais de 30 anos de experiência no mercado de moda,
-                nossa missão é oferecer jeans de alta qualidade, com designs modernos e atemporais que se ajustam ao seu estilo de vida.
-                Cada peça é cuidadosamente produzida, com atenção aos detalhes e às tendências, garantindo que você sempre esteja na moda, sem abrir mão do conforto.
-            </p>
-            <br>
-            <h2>Nossa Missão</h2>
-            <p style="font-size: 18px;">
-                Nosso objetivo é vestir pessoas que buscam personalidade e autenticidade. Trabalhamos com materiais selecionados e técnicas inovadoras
-                para criar peças que se adaptam a todos os corpos, promovendo a inclusão e o respeito à diversidade.
-            </p>
-            
-            <div class="grupo-elementos">
-                <!-- Redes Sociais -->
-                 <div class="redesSociais-container">
-                     <h2>Redes Sociais</h2>
-                     <div class="redesSociais">
-                         <a href="https://www.instagram.com/diverojeans/" target="_blank" style="text-decoration: none;">
-                            <i class="bi bi-instagram"></i> Instagram
-                         </a>
-                         <a href="https://www.facebook.com/diverojeansoficial" target="_blank" style="text-decoration: none;">
-                            <i class="bi bi-facebook"></i> Facebook
-                         </a>
-                         <!-- <a href="https://www.tiktok.com/@diverojeans" target="_blank" style="text-decoration: none;">
+                <!-- Título e Missão -->
+                <h1>Sobre a Divero Jeans</h1>
+                <p style="font-size: 18px;">
+                    Na <strong>Divero Jeans</strong>, acreditamos que estilo e conforto andam juntos. Com mais de 30
+                    anos de experiência no mercado de moda,
+                    nossa missão é oferecer jeans de alta qualidade, com designs modernos e atemporais que se ajustam ao
+                    seu estilo de vida.
+                    Cada peça é cuidadosamente produzida, com atenção aos detalhes e às tendências, garantindo que você
+                    sempre esteja na moda, sem abrir mão do conforto.
+                </p>
+                <br>
+                <h2>Nossa Missão</h2>
+                <p style="font-size: 18px;">
+                    Nosso objetivo é vestir pessoas que buscam personalidade e autenticidade. Trabalhamos com materiais
+                    selecionados e técnicas inovadoras
+                    para criar peças que se adaptam a todos os corpos, promovendo a inclusão e o respeito à diversidade.
+                </p>
+
+                <div class="grupo-elementos">
+                    <!-- Redes Sociais -->
+                    <div class="redesSociais-container">
+                        <h2>Redes Sociais</h2>
+                        <div class="redesSociais">
+                            <a href="https://www.instagram.com/diverojeans/" target="_blank"
+                                style="text-decoration: none;">
+                                <i class="bi bi-instagram"></i> Instagram
+                            </a>
+                            <a href="https://www.facebook.com/diverojeansoficial" target="_blank"
+                                style="text-decoration: none;">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                            <!-- <a href="https://www.tiktok.com/@diverojeans" target="_blank" style="text-decoration: none;">
                             <i class="bi bi-tiktok"></i> TikTok
                          </a> -->
-                         <a href="mailto:contato@diverojeans.com.br" target="_blank" style="text-decoration: none;">
-                            <i class="bi bi-envelope-fill"></i> E-mail
-                         </a>
-                         <a href="https://www.youtube.com/@diverojeans" target="_blank" style="text-decoration: none;">
-                            <i class="bi bi-youtube"></i> YouTube
-                         </a>
-                         <a href="https://open.spotify.com/user/212m4hllzopfeiwbeo5koswli?si=b8fb1025180f496e&nd=1" target="_blank" style="text-decoration: none;">
-                            <i class="bi bi-spotify"></i> Spotify
-                         </a>
-                         <a href="https://www.linkedin.com/company/veritatis-ind" target="_blank" style="text-decoration: none;">
-                            <i class="bi bi-linkedin"></i> LinkedIn
-                         </a>
-                     </div>
-                 </div>
-        
-                <div class="endereco-container">
-                    <!-- Endereço -->
-                        <a href="https://www.google.com/maps/place/Divero+Jeans/@-27.180703,-49.599807,15z/data=!4m6!3m5!1s0x94dfba1f0e9002ad:0x8e60b2188f499d82!8m2!3d-27.1807028!4d-49.5998065!16s%2Fg%2F1tk70nl7?hl=pt-BR&entry=ttu" target="_blank">
+                            <a href="mailto:contato@diverojeans.com.br" target="_blank" style="text-decoration: none;">
+                                <i class="bi bi-envelope-fill"></i> E-mail
+                            </a>
+                            <a href="https://www.youtube.com/@diverojeans" target="_blank"
+                                style="text-decoration: none;">
+                                <i class="bi bi-youtube"></i> YouTube
+                            </a>
+                            <a href="https://open.spotify.com/user/212m4hllzopfeiwbeo5koswli?si=b8fb1025180f496e&nd=1"
+                                target="_blank" style="text-decoration: none;">
+                                <i class="bi bi-spotify"></i> Spotify
+                            </a>
+                            <a href="https://www.linkedin.com/company/veritatis-ind" target="_blank"
+                                style="text-decoration: none;">
+                                <i class="bi bi-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="endereco-container">
+                        <!-- Endereço -->
+                        <a href="https://www.google.com/maps/place/Divero+Jeans/@-27.180703,-49.599807,15z/data=!4m6!3m5!1s0x94dfba1f0e9002ad:0x8e60b2188f499d82!8m2!3d-27.1807028!4d-49.5998065!16s%2Fg%2F1tk70nl7?hl=pt-BR&entry=ttu"
+                            target="_blank">
                             <h2>Endereço</h2>
                             <p style="font-size: 18px;">
                                 <strong>Divero Jeans</strong><br>
@@ -907,6 +1326,7 @@
             </div>
         </div>
     </section>
-    
+
 </body>
+
 </html>

@@ -1,4 +1,7 @@
 @media screen and (max-width: 970px ){
+    .header{
+        display: block;
+    }
 
     nav.menu-lateral{
         display: none;
@@ -13,14 +16,13 @@
     section#home{
         margin-bottom: 20px;
     }
-
-
+    
     .content{
-    height: 100%;
-    display: flex;
-    margin-left: 0px;
-    max-width: 1000px;
-    justify-content: center
+        height: 100%;
+        display: flex;
+        margin-left: 0px;
+        max-width: 1000px;
+        justify-content: center
     }
 
     #home .titulo{

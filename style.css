@@ -11,6 +11,7 @@ body{
     height: auto;
     background-color: whitesmoke;
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -44,6 +45,8 @@ nav.menu-lateral:hover{
     width: 260px;
 }
 
+
+
 .btn-expandir{
     width: 100%;
     padding-left: 10px;
@@ -69,26 +72,26 @@ nav.menu-lateral:hover{
     line-height: 30px;
 }
 
-ul{
+nav.menu-lateral ul{
     list-style-type: none;
     overflow: hidden;
 }
 
-ul li.item-menu{
+nav.menu-lateral ul li.item-menu{
     transition: .2s;
     border-radius: 5px 0 0 5px;
     padding-left: 8px;
 }
 
-ul li.ativo{
+nav.menu-lateral ul li.ativo{
     background-color: #2D4E63;
 }
 
-ul li.item-menu:hover{
+nav.menu-lateral ul li.item-menu:hover{
     background-color: #2D4E63;
 }
 
-ul li.item-menu .a{
+nav.menu-lateral ul li.item-menu .a{
   color: #fff;
   text-decoration: none;
   font-size: 20px;  
@@ -98,13 +101,12 @@ ul li.item-menu .a{
   line-height: 40px; 
 }
 
-ul li.item-menu a .txt-link{
+nav.menu-lateral ul li.item-menu a .txt-link{
     margin-left: 70px;
     transition: .35s;
-    opacity: 0;
 }
 
-ul li div.grupo{
+nav.menu-lateral ul li div.grupo{
     color: #ffffff;
     background-color: #3c6d8b;
     padding: 1px 10px 10px 10px;
