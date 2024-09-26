@@ -1,40 +1,39 @@
-var menuItem  =  document.querySelectorAll('.item-menu');
+var menuItem = document.querySelectorAll('.item-menu');
 
-function selectLink(){
-    menuItem.forEach(item => 
+function selectLink() {
+    menuItem.forEach(item =>
         item.classList.remove('ativo')
     );
     this.classList.add('ativo');
 }
 
-menuItem.forEach((item) => 
+menuItem.forEach((item) =>
     item.addEventListener('click', selectLink)
 );
 
-var menuItemMobile   =  document.querySelectorAll('.item-menu-mobile');
+var menuItemMobile = document.querySelectorAll('.item-menu-mobile');
 
-function selectLink_MenuMobile(){
-    menuItemMobile.forEach(item => 
+function selectLink_MenuMobile() {
+    menuItemMobile.forEach(item =>
         item.classList.remove('ativo')
     );
     this.classList.add('ativo');
 }
 
-menuItemMobile.forEach((item) => 
+menuItemMobile.forEach((item) =>
     item.addEventListener('click', selectLink_MenuMobile)
 );
 
-let btnAbrirMenu = document.getElementById('btn_abrir');
-let overlay = document.getElementById('overlay');
-let btnFecharMenu = document.getElementById('btn_fechar');
-let menuMobile = document.getElementById('menu_mobile');
+let btnAbrirMenu        = document.getElementById('btn_abrir');
+let overlay             = document.getElementById('overlay');
+let btnFecharMenu       = document.getElementById('btn_fechar');
+let menuMobile          = document.getElementById('menu_mobile');
 
 btnAbrirMenu.addEventListener('click', () => {
     menuMobile.classList.add('abrir-menu');
     overlay.style.opacity = '1'
     overlay.style.display = 'block'
 });
-
 
 btnFecharMenu.addEventListener('click', () => {
     menuMobile.classList.remove('abrir-menu');
