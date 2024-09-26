@@ -13,9 +13,15 @@ menuItem.forEach((item) =>
 
 var menuItemMobile   =  document.querySelectorAll('.item-menu-mobile');
 
+function selectLink_MenuMobile(){
+    menuItemMobile.forEach(item => 
+        item.classList.remove('ativo')
+    );
+    this.classList.add('ativo');
+}
 
 menuItemMobile.forEach((item) => 
-    item.addEventListener('click', selectLink)
+    item.addEventListener('click', selectLink_MenuMobile)
 );
 
 let btnAbrirMenu = document.getElementById('btn_abrir');
