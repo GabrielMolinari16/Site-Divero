@@ -19,7 +19,8 @@ section{
     max-width: 1000px;
     /* background-color: aqua; */
     transition: .2s ease;
-    justify-content: center
+    justify-content: center;
+    align-items: center;
 }
 
 nav.menu-lateral:hover ~ section{
@@ -37,6 +38,7 @@ section#home {
 
 section#home .content{
     padding: 0px 0px 0px 0px;
+    align-items: inherit;
 }
 
 /* .container{
@@ -62,14 +64,14 @@ section .content .titulo{
 section#home .content .container-home .subtitulo{
     position: relative;
     top: 100px;
-    margin-top: 15px;
+    margin-top: 20px;
     margin-bottom: 20px;
     color: #2D4E63;
 }
 
 section .container-home .introducao{
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 15px;
     max-width: 600px;
     text-align: center;
     /* background-color: blue; */
