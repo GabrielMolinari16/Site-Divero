@@ -40,6 +40,7 @@
         font-size: 36px;  
         top: 70px;
     }
+
     .titulo{
         font-family: cursiva;
         font-size: 60px;
@@ -58,8 +59,8 @@
     }
 
     section .content .video-conteudo{
-        width: 90%;
-        height: 250px;
+        max-width: 90%;
+        max-height: 250px;
     }
 
     section .content .container-home .video-home{

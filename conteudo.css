@@ -32,10 +32,11 @@ section#home {
     /* background-color: #006eff; */
     display: flex;
     justify-content: center;
+    margin-bottom: 45px;
 }
 
 section#home .content{
-    padding: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 /* .container{
@@ -49,13 +50,21 @@ section#home .content .container{
 
 section .content .container-home{
     /* background-color: brown; */
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-section .content .container-home .subtitulo{
+section .content .titulo{
+    color: #C13622;
+}
+
+section#home .content .container-home .subtitulo{
     position: relative;
     top: 100px;
-    margin-top: 0px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #2D4E63;
 }
 
 section .container-home .introducao{
@@ -93,19 +102,20 @@ section .content .video-conteudo{
     justify-content: center;
     display: flex;
     padding: 0px 5px;
-    text-shadow: #5a5a5ae1 0px 2px 2px;
 }
 
 .subtitulo{
-    font-family: cursiva;
-    font-size: 50px;
-    font-weight: 200;
+    font-family: Helvetica;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
     top: -30px;
     /* background-color: aliceblue; */
     display: flex;
     justify-content: center;
     text-align: center;
     margin-top: 20px;
+    color: #2D4E63;
 }
 
 #home .titulo{
