@@ -84,6 +84,15 @@ nav.menu-lateral ul li.item-menu{
     transition: .2s;
     border-radius: 5px 0 0 5px;
     padding-left: 8px;
+    transition: .2s;
+    height: 40px;
+    margin: 10px 0px;
+    overflow: hidden;
+}
+
+nav.menu-lateral ul li.item-menu.expanded{
+    height: auto;
+    overflow: visible;
 }
 
 nav.menu-lateral ul li.ativo{
