@@ -3,6 +3,10 @@
     src: url(ArtisoulSignature.ttf);
 }
 
+strong{
+    font-weight: bolder;
+}
+
 section{
     transition: .2s;
     /* background-color: red; */
