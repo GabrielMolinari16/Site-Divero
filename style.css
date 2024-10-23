@@ -7,13 +7,37 @@
     font-family: Helvetica, Roboto, sans-serif;
 }
 
-body{
+/* body{
     height: auto;
     background-image: url(background.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    opacity: .01; 
 }
+ */
+
+ body {
+    position: relative;
+    height: auto;
+    margin: 0;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.2; /* Define o nível de opacidade desejado */
+    z-index: -1; /* Certifica-se de que a imagem fique atrás do conteúdo */
+}
+
 
 html{
     scroll-behavior: smooth;
